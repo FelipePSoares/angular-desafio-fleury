@@ -1,6 +1,7 @@
 import { Http, Response } from '@angular/http'
 import { Injectable } from '@angular/core'
 import { Observable } from 'rxjs/Observable'
+import { User } from '../models/User'
 
 import 'rxjs/add/operator/toPromise'
 import 'rxjs/add/operator/map'
