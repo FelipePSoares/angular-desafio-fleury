@@ -6,4 +6,4 @@ export class Objective {
         this.name = name;
         this.percentage = percentage;
     }
-}
+} 

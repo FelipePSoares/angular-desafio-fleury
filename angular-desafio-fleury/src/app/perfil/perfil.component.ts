@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { User } from 'src/Models/User';
-import { UserService } from '../../services/userService'
+import { User } from '../../models/user';
+import { UserService } from '../../services/user.service'
 
 @Component({
   selector: 'app-perfil',
@@ -15,7 +15,7 @@ export class PerfilComponent implements OnInit {
   constructor(private userService: UserService) { }
 
   ngOnInit() {
-    this.userService.getUser('c8fbcb03-68c0-46c0-8dd7-a699cd32ea9d')
+    this.userService.getUser('91618be3-a149-449b-9da2-e75a02fa19fd')
       .then(( user: User) => {
         this.user = user
       });
